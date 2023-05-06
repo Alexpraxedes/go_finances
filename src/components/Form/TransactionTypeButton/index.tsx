@@ -3,7 +3,7 @@ import { RectButtonProps } from "react-native-gesture-handler"; // Importing the
 import { Container, Icon, Title } from "./styles"; // Importing the styled components
 
 interface Props extends RectButtonProps{
-    type: "up" | "down";
+    type: "positive" | "negative";
     isActive: boolean;
     title: string;
 };

@@ -5,7 +5,7 @@ import { RFValue } from "react-native-responsive-fontsize"; // Import RFValue fr
 
 interface TransactionButtonProps {
     isActive: boolean;
-    type: 'up' | 'down';
+    type: 'positive' | 'negative';
 }
 
 export const Container = styled(RectButton)<TransactionButtonProps>`
