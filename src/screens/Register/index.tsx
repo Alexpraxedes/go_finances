@@ -14,8 +14,6 @@ import { useNavigation } from "@react-navigation/native"; // Importing useNaviga
 
 import { 
     Container,
-    Header,
-    Title,
     Form, 
     Fields,
     TransactionsTypes
@@ -25,6 +23,7 @@ import { Button } from "../../components/Form/Button"; // Importing the Button c
 import { TransactionTypeButton } from "../../components/Form/TransactionTypeButton"; // Importing the TransactionTypeButton component
 import { CategorySelectButton } from "../../components/Form/CategorySelectButton"; // Importing the CategorySelect component
 import { CategorySelect } from '../CategorySelect'; // Importing the CategorySelect component
+import { ScreenHeader } from "../../components/ScreenHeader/intex";
 
 interface FormData {
     name: string;
@@ -109,9 +108,7 @@ export function Register() {
     return (
         <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
             <Container>
-                <Header>
-                    <Title>Cadastro</Title>
-                </Header>
+                <ScreenHeader title="Cadastro" />
 
                 <Form>
                     <Fields>
