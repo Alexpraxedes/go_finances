@@ -10,8 +10,8 @@ import {
 } from '@expo-google-fonts/poppins'; // Importing the fonts
 
 import theme from './src/global/styles/theme'; // Importing the theme object
-import { Dashboard } from './src/screens/Dashboard'; // Importing the Dashboard component
-
+import { NavigationContainer } from '@react-navigation/native'; // Importing the NavigationContainer component from @react-navigation/native
+import { AppRoutes } from './src/routes/app.routes'; // Importing the AppRoutes component
 export default function App() {
   const [fontsLoaded] = useFonts({
     Poppins_400Regular,
@@ -25,7 +25,9 @@ export default function App() {
 
   return (
     <ThemeProvider theme={theme}>
-      <Dashboard />
+      <NavigationContainer>
+        <AppRoutes />
+      </NavigationContainer>
     </ThemeProvider>
   );
 }
