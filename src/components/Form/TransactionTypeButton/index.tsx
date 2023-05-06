@@ -1,8 +1,8 @@
-import React from "react";
-import { TouchableOpacityProps } from "react-native";
-import { Container, Icon, Title } from "./styles";
+import React from "react"; // Importing React
+import { RectButtonProps } from "react-native-gesture-handler"; // Importing the RectButtonProps interface from react-native-gesture-handler
+import { Container, Icon, Title } from "./styles"; // Importing the styled components
 
-interface Props extends TouchableOpacityProps{
+interface Props extends RectButtonProps{
     type: "up" | "down";
     isActive: boolean;
     title: string;

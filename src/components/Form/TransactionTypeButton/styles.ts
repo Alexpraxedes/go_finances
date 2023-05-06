@@ -1,6 +1,6 @@
 import styled, { css } from "styled-components/native"; // Import styled from styled-components/native
 import { Feather } from "@expo/vector-icons"; // Import Feather from @expo/vector-icons
-import { TouchableOpacity } from "react-native"; // Import TouchableOpacity from react-native
+import { RectButton } from "react-native-gesture-handler"; // Import ReactButton from react-native-gesture-handler 
 import { RFValue } from "react-native-responsive-fontsize"; // Import RFValue from react-native-responsive-fontsize
 
 interface TransactionButtonProps {
@@ -8,7 +8,7 @@ interface TransactionButtonProps {
     type: 'up' | 'down';
 }
 
-export const Container = styled(TouchableOpacity)<TransactionButtonProps>`
+export const Container = styled(RectButton)<TransactionButtonProps>`
     justify-content: space-between;
     width: 48%;
     flex-direction: row;

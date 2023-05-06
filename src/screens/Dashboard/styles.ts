@@ -1,9 +1,10 @@
 import styled from "styled-components/native"; // Import styled from styled-components/native
-import { FlatList } from "react-native";
+import { FlatList } from "react-native"; // Import FlatList from react-native
 import { RFPercentage, RFValue } from "react-native-responsive-fontsize"; // Import RFPercentage from react-native-responsive-fontsize
 import { Feather } from "@expo/vector-icons"; // Importing the Feather icon pack from expo/vector-icons
 import { getBottomSpace, getStatusBarHeight } from "react-native-iphone-x-helper"; // Import getStatusBarHeight from react-native-iphone-x-helper
-import { DataListProps } from "."; // Import DataListProps from .
+import { DataListProps } from "."; // Import DataListProps from
+import { BorderlessButton } from "react-native-gesture-handler"; // Import BorderlessButton from react-native-gesture-handler
 
 export const Container = styled.View`
     background-color: ${({ theme }) => theme.colors.background};
@@ -51,6 +52,8 @@ export const UserName = styled.Text `
     font-size: ${RFValue(16)}px;
     font-family: ${({ theme }) => theme.fonts.bold};
 `;
+
+export const LogoutButton = styled(BorderlessButton) ``;
 
 export const Icon = styled(Feather) `
     color: ${({ theme }) => theme.colors.secondary};
