@@ -24,6 +24,8 @@ import {
   LoadContainer
 } from "./styles"; // Importing the styled components
 
+const theme = useTheme();
+
 function getLastTransactionDate(
   collection: DataListProps[],
   type: 'positive' | 'negative'
@@ -142,7 +144,7 @@ export function Dashboard() {
         isLoading ?
         <LoadContainer>
           <ActivityIndicator
-            color={useTheme().colors.primary}
+            color={theme.colors.primary}
             size="large"
           />
         </LoadContainer> :
